@@ -1,0 +1,20 @@
+<p>weather works!</p>
+<div class="parent">
+    <div class="child" *ngFor="let weather of weathers">
+        <h2>weather in hyderabad</h2>
+
+        <div [ngClass]="{'blue':weather.current_weather.temperature<0,
+        'yellow':weather.current_weather.temperature<30,
+        'green':weather.current_weather.temperature<35,
+        'red':weather.current_weather.temperature>35}" id="sun"></div>
+
+        <!-- <label for="">{{weather.current_weather.temperature}}</label> -->
+        <h1 class="temp">{{weather.current_weather.temperature}} <sup>0</sup>C</h1>
+
+        <pre>Wind Speed: {{weather.current_weather.windspeed}}km/h</pre>
+        <pre>Wind Direction: {{weather.current_weather.winddirection}} <sup>0</sup>(NE)</pre>
+        <pre class="day">{{weather.current_weather ==0? 'day time': 'night time'}}</pre>
+        <pre>{{weather.current_weather.time | date:'medium':'GMT+5.30'}}</pre>
+
+    </div>
+</div>

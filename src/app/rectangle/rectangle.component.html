@@ -1,0 +1,15 @@
+<p>rectangle works!</p>
+<div class="rectform"> 
+    <label for="">Length :</label>
+    <input type="number" [(ngModel)]="length" placeholder="enter the length">
+    <br>
+    <br>
+ <pre><label for="">width :</label> <input type="number" [(ngModel)]="width" placeholder="enter the breadth"></pre>
+    <br>
+    <br>
+    <pre>   <button [disabled]="!length || !width" (click)="area()">       Area      </button> 
+
+     <button [disabled]="!length || !width" (click)="perimeter()">  Perimeter</button> </pre>
+    <br>
+    <h1>Result is: {{result}}</h1>
+</div>

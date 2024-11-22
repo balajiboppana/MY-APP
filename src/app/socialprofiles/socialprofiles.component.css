@@ -1,0 +1,73 @@
+.heading {
+  height: 10%;
+  width: 100%;
+  background-color: greenyellow;
+  color: white;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+#ctext {
+  font-size: xx-small;
+}
+.user{
+    padding: 20px;
+}
+.circle {
+  margin-top: 10px;
+  height: 25%;
+  width: 45%;
+  border-radius: 70%;
+  background-color: lightslategray;
+  margin-left: 90px;
+}
+h1 {
+  margin-top: 10px;
+}
+.mainbox {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+h4 {
+  margin-left: 100px;
+  cursor: pointer;
+}
+/* #mpre {
+  margin-left: 20px;
+} */
+.profilebox {
+  background-color: white;
+  height: 80%;
+  width: 30%;
+  margin: 10px;
+  border-radius: 5%;
+  /* text-overflow: auto; */
+  /* position: relative;
+    align-content: center;
+    /* justify-content: center; */
+  /* align-items: center; */
+  /* justify-items: center; */
+}
+
+a {
+  text-decoration: none;
+}
+.followers {
+  background-color: lightgray;
+  height: 40px;
+  width: 120px;
+  margin: 10px;
+  border-radius: 5%;
+  position: relative;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+}
+
+#bold {
+  font-weight: 900;
+}

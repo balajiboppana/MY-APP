@@ -1,0 +1,59 @@
+<!-- <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+       Loop through pokemans array -->
+        <!-- <div class="carousel-item" *ngFor="let pokemon of pokemon; let i = index" [class.active]="i === 0">
+            <img [src]="pokemon.image_url" class="d-block w-50" alt="{{ pokemon.pokemon }}">
+            <div class="carousel-caption d-none d-md-block">
+              <h1>{{ pokemon.pokemon }}</h1>
+              <p><b>Type:</b> {{ pokemon.type }}</p>
+              <p><b>Abilities:</b> {{ pokemon.abilities }}</p>
+              <p><b>Hitpoints:</b> {{ pokemon.hitpoints }}</p>
+              <p><b>Evolutions:</b> {{ pokemon.evolutions }}</p>
+              <p><b>Location:</b> {{ pokemon.location }}</p>
+            </div>
+       </div>
+    </div> -->
+    
+    <!-- Carousel Controls -->
+    <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div> --> 
+
+  <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+    <!-- <h3>Pok&#232;man Carousel</h3> -->
+
+    
+    
+        <div class="carousel-inner">
+            
+            <div class="carousel-item" *ngFor="let man of pokemon; let i = index" [class.active]="i === 0">
+                <img [src]="man.image_url" class="d-block w-50" alt="image">
+
+                <h5>{{ man.pokemon }}</h5>
+                <p><b>Type:</b> {{ man.type }}</p>
+                <p><b>Abilities:</b> {{ man.abilities }}</p>
+                <p><b>Hitpoints:</b> {{ man.hitpoints }}</p>
+                <p><b>Evolutions:</b> {{ man.evolutions }}</p>
+                <p><b>Location:</b> {{ man.location }}</p>
+                
+
+            </div>
+
+    </div>
+
+    <!-- Carousel Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+        <!-- <span id="prev">Previous</span> -->
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+        <!-- <span id="prev">Next</span> -->
+    </button>
+</div>

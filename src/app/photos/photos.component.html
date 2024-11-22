@@ -1,0 +1,11 @@
+<div class="row">
+  <div class="container-1">
+    <div class="image-container" *ngFor="let photo of photos">
+      <img [src]="photo.download_url" alt="Image" width="100px" />
+      <div class="overlay">
+        <p>{{ photo.author }}</p>
+        <a [href]="photo.download_url" class="btn btn-primary" download>Download</a>
+      </div>
+    </div>
+  </div>
+</div>

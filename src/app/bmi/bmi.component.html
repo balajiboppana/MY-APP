@@ -1,0 +1,34 @@
+
+<div class="mainContainer">
+    <div class="childContainer">
+      <div class="titleDiv">
+        <label for="" class="titlelabel"
+          >Body Mass Index (BMI) Calculator</label
+        >
+      </div>
+      <div class="cardsContainer">
+        <div class="left">
+          <div class="inputs">
+            <label for="">Height:</label>
+            <input type="number" [(ngModel)]="height" class="input" id="height" />
+            <button for="" class="untis">cm</button>
+          </div>
+          <div class="inputs">
+            <pre><label for="">Weight:</label><input type="number" [(ngModel)]="weight" class="input" id="weight" /><button for="" class="untis">Kg</button></pre>
+          </div>
+          <button class="calculateButton" (click)="calculate()">Calculate</button>
+          <label>Your BMI is {{result}} <span [style.color]="color">{{result1}}</span></label>
+        </div>
+        <div class="right">
+          <!-- <div class="rightTop">
+            <label
+              >You need to losse atleast 9.0kgs to be in normal range</label
+            >
+          </div> -->
+          <div class="rightBottom">
+            <img src="assets/bmi.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

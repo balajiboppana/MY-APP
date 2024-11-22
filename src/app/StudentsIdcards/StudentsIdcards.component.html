@@ -1,0 +1,54 @@
+<div class="buttons">
+    <input type="text" placeholder="search" [(ngModel)]="term" (keyup)="filter()">
+    <div>
+        <select [(ngModel)]="column" >
+            <option >select</option>
+            <option>school_pin</option>
+            <option>dob</option>
+            <option>id</option>
+        </select>
+        <select [(ngModel)]="order" >
+            <option>asc</option>
+            <option>desc</option>
+        </select>
+        <button (click)="sort()">sort</button>
+    </div>
+<div>
+    <select [(ngModel)]="limit" >
+        <option >10</option>
+        <option>20</option>
+        <option>30</option>
+        <option>40</option>
+    </select>
+    <select [(ngModel)]="page" >
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+    </select>
+    <button (click)="pagination()">pagination</button>
+</div>
+</div>
+<div class="main">
+    <div class=" maincard" *ngFor="let StudentsIdcard of StudentsIdcards">
+        <div class="top">
+            <div class="tleft"><p><img src="{{StudentsIdcard.school_logo}}" alt="" height="50px" width="50px"></p></div> 
+            <div class="tright">{{StudentsIdcard.school_name}}</div>
+        </div>
+        <div class="middle">
+            <div class="mleft">
+                <p>Name:  {{StudentsIdcard.name}}</p>
+                <p>Phone: {{StudentsIdcard.phone}}</p>
+                <p>Dob: {{StudentsIdcard.dob}}</p>
+                <p>City: {{StudentsIdcard.city}}</p>
+                <p>Email: {{StudentsIdcard.email}}</p>
+            </div>
+            <div class="mright"><p><img src="{{StudentsIdcard.profile_picture}}" alt="" style="padding: 20px;" height="188px" width="165px"></div>
+        </div>
+        <div class="bottom">
+            <p>school city: {{StudentsIdcard.school_city}}</p>
+            <p>school pin: {{StudentsIdcard.school_pin}}</p>
+            <br>
+            <td><button (click)="delete(StudentsIdcard.id)" class="btn btn-danger">danger</button></td>
+        </div>
+    </div>
+</div>

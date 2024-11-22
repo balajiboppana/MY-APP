@@ -1,0 +1,46 @@
+<!-- <p>socialprofiles works!</p> -->
+<div class="mainbox">
+  <div class="heading">
+    <h1>Social Profiles</h1>
+  </div>
+  <div class="profilebox card p-3" *ngFor="let socialprofile of socialprofiles">
+    <div class="circle">
+      <pre id="ctext">
+     
+                
+
+
+
+    {{ socialprofile.username }} profile pic</pre
+      >
+    </div>
+    <h4 (click)="socialprofile.isVisible = !socialprofile.isVisible">
+      {{ socialprofile.fullName }}
+    </h4>
+    <div *ngIf="socialprofile.isVisible" class="user">
+      <!-- <pre id="mpre"> -->
+                <label for="">{{socialprofile.username}}</label>
+          <br>
+<label for="">{{socialprofile.bio}}</label>
+<label for="" *ngIf="socialprofile.privacySettings.showEmail===true">{{socialprofile.email}}</label>
+<br>
+<label for="" *ngIf="socialprofile.privacySettings.showBirthDate===true">{{socialprofile.birthDate}}</label>
+<br>
+<label id="" for=""><b>Location:</b> <label for="">{{socialprofile.location}}</label></label>
+<br>
+<label id="" for=""><b>Work:</b> <label for="">{{socialprofile.work}}</label></label>
+<br>
+<label id="" for=""><b>Hobbies:</b> <label for="">{{socialprofile.hobbies}}</label></label>
+<br>
+<label id=""  for=""><b>Interests: </b>{{socialprofile.interests}}</label>
+<br>
+    <a id="bold" href="{{socialprofile.homepage}}" style="color: green;" for="">Visit homepage</a>
+    <br>
+<label class="followers"><label for="">Followers:</label>{{socialprofile.followersCount}}
+</label><label class="followers"><label for="">Following:</label>{{socialprofile.followingCount}}</label>
+    <label class="followers"><label for="">Posts:</label>{{socialprofile.postsCount}}</label>
+<!-- </pre> -->
+        
+    </div>
+  </div>
+</div>

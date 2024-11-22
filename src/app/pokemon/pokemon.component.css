@@ -1,0 +1,60 @@
+/* #carouselExampleIndicators{
+    height: 50%;
+    width: 50%;
+    background-color:indianred;
+    margin-top: 200px;
+    position: relative;
+    justify-self: center;
+    align-self: center;
+}
+h1{
+    color: black;
+}
+p{
+    color: black;
+}
+
+.child{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+
+} */
+
+.carousel-inner{
+    height: 60%;
+    width:30%;
+    box-shadow: 0 0 3px black;
+    border-radius: 5px;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+}
+#carouselExample{
+    height: 100%;
+    width:100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    position: relative;
+}
+#prev{
+    color:black;
+    font-size: large;
+    box-shadow: 0 0 10px red;
+
+}
+.active1{
+    background-color: black;
+}
+h3{
+    font-size: x-large;
+    font-weight: 500;
+    position: absolute;
+    top: 60px;
+}

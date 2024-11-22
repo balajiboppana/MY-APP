@@ -1,0 +1,35 @@
+<form action="" [formGroup]="StudentsIdcardsForm">
+    <h1>create id card</h1>
+    <label for="">Name: </label>
+    <input type="text" placeholder="enter Student Name" formControlName="name">
+    <br>
+    <label for="">Phone No: </label>
+    <input type="text" placeholder="enter Phone No" formControlName="phone">
+    <br>
+    <label for="">City: </label>
+    <input type="text" placeholder="enter City Name" formControlName="city">
+    <br>
+    <label for="">DOB: </label>
+    <input type="text" placeholder="enter City" formControlName="dob">
+    <br>
+    <label for="">Profile Picture: </label>
+    <input type="text" placeholder="upload Profile Picture" formControlName="profile_picture">
+    <br>
+    <label for="">Email: </label>
+    <input type="text" placeholder="enter email" formControlName="email">
+    <br>
+    <label for="">School Logo: </label>
+    <input type="text" placeholder="upload school logo" formControlName="school_logo">
+    <br>
+    <label for="">School Name: </label>
+    <input type="text" placeholder="enter school name" formControlName="school_name">
+    <br>
+    <label for="">School City: </label>
+    <input type="text" placeholder="enter school city" formControlName="school_city">
+    <br>
+    <label for="">School Pin: </label>
+    <input type="text" placeholder="enter school pin" formControlName="school_pin">
+    <br>
+    <br>
+    <button (click)="submit()" class="btn btn-warning">submit</button>
+</form>

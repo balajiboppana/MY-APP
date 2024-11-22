@@ -1,0 +1,30 @@
+<p>create-vehicle works!</p>
+<form action="" [formGroup]="vehicleForm">
+    <h1>create vehicle form</h1>
+    <label for="">vehicle: </label>
+    <input type="text" placeholder="enter vehicle name" formControlName="Vehicle">
+    <br>
+    <label for="">Manufacturer: </label>
+    <input type="text" placeholder="enter Manufacturer name" formControlName="manufacturer">
+    <br>
+    <label for="">Model: </label>
+    <input type="text" placeholder="enter Model name" formControlName="model">
+    <br>
+    <label for="">Type: </label>
+    <input type="text" placeholder="enter the type" formControlName="type">
+    <br>
+    <label for="">Fuel: </label>
+    <input type="text" placeholder="enter fuel type" formControlName="fuel">
+    <br>
+    <label for="">Color: </label>
+    <input type="text" placeholder="enter vehicle color" formControlName="color">
+    <br>
+    <label for="">Picture: </label>
+    <input type="text" placeholder="upload vehicle Picture" formControlName="image">
+    <br>
+    <label for="">Cost: </label>
+    <input type="text" placeholder="enter vehicle cost" formControlName="cost">
+    <br>
+    <br>
+    <button (click)="submit()" class="btn btn-warning">submit</button>
+</form>

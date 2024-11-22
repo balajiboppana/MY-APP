@@ -1,0 +1,17 @@
+.loginform{
+    height: 250px;
+    width:270px;
+    background-color: lightseagreen;
+    /* display: flex; */
+    position: relative;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    justify-self: center;
+    margin-top: 250px;
+}
+#loginbutton{
+    height: 50px;
+    width: 150px;
+}

@@ -1,0 +1,22 @@
+<!-- <p>products works!</p>
+<div class="mainbox" >
+    <div class="subbox" *ngFor="let product of products" >
+        <h5>{{product.id}}</h5>
+        <img src="{{product.image}}" alt="" width="100px">
+        <h5>{{product.category}}</h5>
+        <label class="title" for="">{{product.title}}</label>
+        <label class="price" for="">{{product.price}}</label>
+    </div>
+</div> -->
+
+<div class="row">
+    <div class="card subbox" style="width: 15rem;" *ngFor="let product of products">
+        <img class="card-img-top" src="{{product.image}}" alt="Card image cap" width="100px" height="200px">
+        <label class="rating">{{product.rating.rate}}</label>
+        <div class="card-body"> 
+          <h5 class="card-title">{{product.title}}</h5>
+          <!-- <a href="#" class="btn btn-primary">Add to Cart</a> -->
+          <h4 class="price">Rs.{{product.price}}</h4>
+        </div>
+      </div>
+</div>

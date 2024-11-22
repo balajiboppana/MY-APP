@@ -1,0 +1,34 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+}
+.top{
+    height: 45%;
+    width: 100%;
+    margin: 0;
+    display: flex;
+}
+.topright{
+    height: 25%;
+    width: 50%;
+    margin: 0;
+}
+.topleft{
+    height: 25%;
+    width: 50%;
+    margin: 0;
+}
+.btn1{
+    background-color: skyblue;
+}
+
+.btng{
+    background-color: lightgreen;
+}
+.btnta{
+    background-color: grey;
+}
+.btnti{
+    background-color: grey;
+}

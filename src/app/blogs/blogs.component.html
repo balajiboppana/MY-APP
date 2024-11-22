@@ -1,0 +1,7 @@
+<div class="mainblog">
+    <div class="subblog" *ngFor="let blog of blogs">
+            <h4>{{blog.title}}</h4>
+            <pre><label class="font">By {{blog.author}}</label> <label class="grey">|{{blog.date_published}}</label></pre>
+        <p class="content">{{blog.content}}</p>
+    </div>
+</div>

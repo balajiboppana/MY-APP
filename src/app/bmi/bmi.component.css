@@ -1,0 +1,126 @@
+*{
+    box-sizing: border-box;
+    
+}
+body{
+    margin: 0;
+}
+.mainContainer{
+    width: 80vw;
+    height: 100vh;
+    background-image: linear-gradient(to bottom right,white,orange);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.childContainer{
+    width: 85%;
+    height: 85%;
+    background-color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.titleDiv{
+
+    width:80% ;
+    height: 10%;
+    /* background-color: aqua; */
+    text-align: center;
+}
+.titlelabel{
+    font-size: 25px;
+    font-weight: 600;
+}
+.cardsContainer{
+    width: 80%;
+    height: 80%;
+    /* background-color: blueviolet; */
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.left{
+    width:48% ;
+    height: 95%;
+
+    background-color: rgb(220, 218, 218);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 0px 10px 20px gray;
+
+    /* padding: 20px;
+    padding-top: 30px; */
+}
+.inputs{
+
+    width: 70%;
+    height: 8%;
+    background-color: rgb(220, 218, 218);
+    /* margin-bottom: 20px; */
+    
+}
+.input{
+    height: 100%;
+    width: 70%;
+    outline: none;
+    margin: 0px;
+    border-radius: 0px;
+    border: 1px solid rgb(220, 218, 218);
+}
+.untis{
+    height: 95%;
+    background-color:antiquewhite ;
+    background-color: rgb(177, 174, 174);
+    border: none;
+    margin: 0px;
+}
+.calculateButton{
+    border: none;
+    background-color: blue;
+    border-radius: 5px;
+    width: 100px;
+    height: 25px;
+    color: white;
+}
+
+
+
+
+.right{
+    width:48% ;
+    height: 95%;
+
+    /* background-color: rgb(243, 124, 124); */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.rightTop{
+    width: 100%;
+    height: 15%;
+    background-color: rgb(206, 206, 206);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-shadow: 0px 10px 20px gray;
+    
+}
+.rightBottom{
+    width: 100%;
+    height:70% ;
+    background-color: blanchedalmond;
+}
+.rightBottom img{
+    width: 100%;
+    height: 100%;
+}
