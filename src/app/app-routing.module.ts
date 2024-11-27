@@ -28,6 +28,9 @@ import { CreateVehicleComponent } from './create-vehicle/create-vehicle.componen
 import { CreateAccountsComponent } from './create-accounts/create-accounts.component';
 import { StudentsIdcardsComponent } from './StudentsIdcards/StudentsIdcards.component';
 import { CreateStudentsIdcardsComponent } from './create-students-idcards/create-students-idcards.component';
+import { DummyDisplayComponent } from './dummy-display/dummy-display.component';
+import { CreateUserComponent } from './create-user/create-user.component';
+import { CreateStudentComponent } from './create-student/create-student.component';
 
 const routes: Routes = [
   {path:'login', component:LoginComponent},
@@ -57,6 +60,9 @@ const routes: Routes = [
     {path:'createAccounts', component:CreateAccountsComponent},
     {path:'StudentsIdcards',component:StudentsIdcardsComponent},
     {path:'createStudentsIdcards', component:CreateStudentsIdcardsComponent},
+    {path:'dummy-display', component:DummyDisplayComponent},
+    {path:'create-user', component:CreateUserComponent},
+    {path:'create-student', component:CreateStudentComponent},
   ]},
   {path:'',component:LoginComponent},
   {path:'**',component:PageNotFoundComponent},

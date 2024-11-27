@@ -33,6 +33,25 @@ import { CreateVehicleComponent } from './create-vehicle/create-vehicle.componen
 import { CreateAccountsComponent } from './create-accounts/create-accounts.component';
 import { StudentsIdcardsComponent } from './StudentsIdcards/StudentsIdcards.component';
 import { CreateStudentsIdcardsComponent } from './create-students-idcards/create-students-idcards.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { DummyDisplayComponent } from './dummy-display/dummy-display.component';
+import {MatBadgeModule} from '@angular/material/badge';
+import {MatIconModule} from '@angular/material/icon';
+import {MatBottomSheetModule} from '@angular/material/bottom-sheet';
+import {MatButtonModule} from '@angular/material/button';
+import {MatButtonToggleModule} from '@angular/material/button-toggle';
+import {MatCardModule} from '@angular/material/card';
+import {MatCheckboxModule} from '@angular/material/checkbox';
+import {MatChipsModule} from '@angular/material/chips';
+import {MatCommonModule} from '@angular/material/core';
+import {MatDialogModule} from '@angular/material/dialog';
+import {MatDividerModule} from '@angular/material/divider';
+import {MatExpansionModule} from '@angular/material/expansion';
+import { DummyDialogDisplayComponent } from './dummy-dialog-display/dummy-dialog-display.component';
+import { CreateUserComponent } from './create-user/create-user.component';
+import { CreateStudentComponent } from './create-student/create-student.component';
+import { MatListModule } from "@angular/material/list";
 
 @NgModule({
   declarations: [
@@ -65,6 +84,10 @@ import { CreateStudentsIdcardsComponent } from './create-students-idcards/create
     CreateAccountsComponent,
     StudentsIdcardsComponent,
     CreateStudentsIdcardsComponent,
+    DummyDisplayComponent,
+    DummyDialogDisplayComponent,
+    CreateUserComponent,
+    CreateStudentComponent,
   ],
   imports: [
     BrowserModule,
@@ -72,7 +95,21 @@ import { CreateStudentsIdcardsComponent } from './create-students-idcards/create
     FormsModule,
     HttpClientModule,
     ReactiveFormsModule,
-    
+    BrowserAnimationsModule,
+    MatSlideToggleModule,
+    MatBadgeModule,
+    MatIconModule,
+    MatBottomSheetModule,
+    MatButtonModule,
+    MatButtonToggleModule,
+    MatCardModule,
+    MatCheckboxModule,
+    MatChipsModule,
+    MatCommonModule,
+    MatDialogModule,
+    MatDividerModule,
+    MatExpansionModule,
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
