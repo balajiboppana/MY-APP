@@ -1,4 +1,3 @@
-<p>vehicle works!</p>
 <input type="text" placeholder="search" [(ngModel)]="term" (keyup)="filter()">
 <select [(ngModel)]="column" >
     <option >select</option>
@@ -51,7 +50,11 @@
                 <img src="{{vehicle.image}}" alt="" width="100px">
             </td>
             <td>{{vehicle.id}}</td>
-            <td><button (click)="delete(vehicle.id)" class="btn btn-danger">danger</button></td>
+            <td>
+                <button (click)="delete(vehicle.id)" class="btn btn-danger">danger</button>
+                <button routerLink="/dashboard/vehicle-details/{{vehicle.id}}" class="btn btn-warning">view</button>
+                <button routerLink="/dashboard/edit-vehicle/{{vehicle.id}}" class="btn btn-info">edit</button>
+            </td>
         </tr>
     </tbody>
 </table>

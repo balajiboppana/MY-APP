@@ -31,10 +31,12 @@ import { CreateStudentsIdcardsComponent } from './create-students-idcards/create
 import { DummyDisplayComponent } from './dummy-display/dummy-display.component';
 import { CreateUserComponent } from './create-user/create-user.component';
 import { CreateStudentComponent } from './create-student/create-student.component';
+import { AuthenticationGuard } from './authentication.guard';
+import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.component';
 
 const routes: Routes = [
   {path:'login', component:LoginComponent},
-  {path:'dashboard', component:DashboardComponent,children:[
+  {path:'dashboard', canActivate:[AuthenticationGuard], component:DashboardComponent,children:[
     {path:'home', component:HomeComponent},
     {path:'welcome', component:WelcomeComponent},
     {path:'data-binding', component:DataBindingComponent},
@@ -63,6 +65,8 @@ const routes: Routes = [
     {path:'dummy-display', component:DummyDisplayComponent},
     {path:'create-user', component:CreateUserComponent},
     {path:'create-student', component:CreateStudentComponent},
+    {path:'vehicle-details/:id', component:VehicleDetailsComponent},
+    {path:'edit-vehicle/:id', component:CreateVehicleComponent},
   ]},
   {path:'',component:LoginComponent},
   {path:'**',component:PageNotFoundComponent},

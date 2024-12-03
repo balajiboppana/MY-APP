@@ -38,6 +38,9 @@ export class CreateUserComponent {
   deleteCard(i:number){
     this.cardsFormArray.removeAt(i);
   }
+
+  // constructor doesn't need an function like example "login()" in html to do some task,-
+  // -it is automatically called before anything in the component. 
   constructor(){
     this.userform.get("type")?.valueChanges.subscribe(
       (data:any)=>{
