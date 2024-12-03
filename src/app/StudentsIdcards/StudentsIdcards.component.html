@@ -48,7 +48,11 @@
             <p>school city: {{StudentsIdcard.school_city}}</p>
             <p>school pin: {{StudentsIdcard.school_pin}}</p>
             <br>
-            <td><button (click)="delete(StudentsIdcard.id)" class="btn btn-danger">delete</button></td>
+            <td>
+                <button (click)="delete(StudentsIdcard.id)" class="btn btn-danger">delete</button>
+                <button routerLink="/dashboard/idcard-details/{{StudentsIdcard.id}}" class="btn btn-warning">view</button>
+                <button routerLink="/dashboard/edit-idcard/{{StudentsIdcard.id}}" class="btn btn-info">edit</button>
+            </td>
         </div>
     </div>
 </div>
