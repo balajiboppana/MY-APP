@@ -34,6 +34,7 @@ import { CreateStudentComponent } from './create-student/create-student.componen
 import { AuthenticationGuard } from './authentication.guard';
 import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.component';
 import { AccountDetailsComponent } from './Account-details/account-details.component';
+import { IdcardDetailsComponent } from './idcard-details/idcard-details.component';
 
 const routes: Routes = [
   {path:'login', component:LoginComponent},
@@ -70,6 +71,8 @@ const routes: Routes = [
     {path:'edit-vehicle/:id', component:CreateVehicleComponent},
     {path:'account-details/:id',component:AccountDetailsComponent},
     {path:'edit-account/:id', component:CreateAccountsComponent},
+    {path:'idcard-details/:id', component:IdcardDetailsComponent},
+    {path:'edit-idcard/:id', component:CreateStudentsIdcardsComponent},
   ]},
   {path:'',component:LoginComponent},
   {path:'**',component:PageNotFoundComponent},

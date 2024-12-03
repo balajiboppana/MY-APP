@@ -55,6 +55,8 @@ import { MatListModule } from "@angular/material/list";
 import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.component';
 import { AccountDetailsComponent } from './Account-details/account-details.component';
 import { EditAccountComponent } from './edit-account/edit-account.component';
+import { IdcardDetailsComponent } from './idcard-details/idcard-details.component';
+import { EditIdcardComponent } from './edit-idcard/edit-idcard.component';
 
 @NgModule({
   declarations: [
@@ -94,6 +96,8 @@ import { EditAccountComponent } from './edit-account/edit-account.component';
     VehicleDetailsComponent,
     AccountDetailsComponent,
     EditAccountComponent,
+    IdcardDetailsComponent,
+    EditIdcardComponent,
   ],
   imports: [
     BrowserModule,
