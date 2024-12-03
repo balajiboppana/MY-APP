@@ -53,6 +53,8 @@ import { CreateUserComponent } from './create-user/create-user.component';
 import { CreateStudentComponent } from './create-student/create-student.component';
 import { MatListModule } from "@angular/material/list";
 import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.component';
+import { AccountDetailsComponent } from './Account-details/account-details.component';
+import { EditAccountComponent } from './edit-account/edit-account.component';
 
 @NgModule({
   declarations: [
@@ -90,6 +92,8 @@ import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.compo
     CreateUserComponent,
     CreateStudentComponent,
     VehicleDetailsComponent,
+    AccountDetailsComponent,
+    EditAccountComponent,
   ],
   imports: [
     BrowserModule,

@@ -33,6 +33,7 @@ import { CreateUserComponent } from './create-user/create-user.component';
 import { CreateStudentComponent } from './create-student/create-student.component';
 import { AuthenticationGuard } from './authentication.guard';
 import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.component';
+import { AccountDetailsComponent } from './Account-details/account-details.component';
 
 const routes: Routes = [
   {path:'login', component:LoginComponent},
@@ -67,6 +68,8 @@ const routes: Routes = [
     {path:'create-student', component:CreateStudentComponent},
     {path:'vehicle-details/:id', component:VehicleDetailsComponent},
     {path:'edit-vehicle/:id', component:CreateVehicleComponent},
+    {path:'account-details/:id',component:AccountDetailsComponent},
+    {path:'edit-account/:id', component:CreateAccountsComponent},
   ]},
   {path:'',component:LoginComponent},
   {path:'**',component:PageNotFoundComponent},

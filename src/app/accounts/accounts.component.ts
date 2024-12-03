@@ -9,7 +9,7 @@ import { AccountsService } from '../accounts.service';
 export class AccountsComponent {
   Accounts:any=[];
   term:string='';
-  column:string='';
+  column:number=0;  
   order:string='';
   limit:number=0;
   page:number=0;
