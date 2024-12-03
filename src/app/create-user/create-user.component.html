@@ -8,7 +8,7 @@
         <p class="error" *ngIf="userform.get('name')?.errors?.['maxlength']">Maximum 10 characters only</p>
     </div>
     <br>
-
+    <mat-divider style="background-color: brown; height: 10px;"></mat-divider>
     <label for="">Age:</label>
     <input type="text" formControlName="age">
     <div *ngIf="userform.get('age')?.touched && userform.get('age')?.invalid">
@@ -82,3 +82,6 @@
     </div>
     <button (click)="submit()" class="btn btn-warning">submit</button>
 </form>
+<h1>hi</h1>
+<mat-divider></mat-divider>
+<h1>g1</h1>

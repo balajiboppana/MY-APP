@@ -52,6 +52,7 @@ import { DummyDialogDisplayComponent } from './dummy-dialog-display/dummy-dialog
 import { CreateUserComponent } from './create-user/create-user.component';
 import { CreateStudentComponent } from './create-student/create-student.component';
 import { MatListModule } from "@angular/material/list";
+import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.component';
 
 @NgModule({
   declarations: [
@@ -88,6 +89,7 @@ import { MatListModule } from "@angular/material/list";
     DummyDialogDisplayComponent,
     CreateUserComponent,
     CreateStudentComponent,
+    VehicleDetailsComponent,
   ],
   imports: [
     BrowserModule,
