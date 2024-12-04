@@ -35,6 +35,8 @@ import { AuthenticationGuard } from './authentication.guard';
 import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.component';
 import { AccountDetailsComponent } from './Account-details/account-details.component';
 import { IdcardDetailsComponent } from './idcard-details/idcard-details.component';
+import { ParentComponent } from './parent/parent.component';
+import { SiblingsComponent } from './siblings/siblings.component';
 
 const routes: Routes = [
   {path:'login', component:LoginComponent},
@@ -73,6 +75,8 @@ const routes: Routes = [
     {path:'edit-account/:id', component:CreateAccountsComponent},
     {path:'idcard-details/:id', component:IdcardDetailsComponent},
     {path:'edit-idcard/:id', component:CreateStudentsIdcardsComponent},
+    {path:'parent', component:ParentComponent},
+    {path:'siblings', component:SiblingsComponent},
   ]},
   {path:'',component:LoginComponent},
   {path:'**',component:PageNotFoundComponent},
