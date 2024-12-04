@@ -13,6 +13,7 @@
     <div class="card subbox" style="width: 15rem;" *ngFor="let product of products">
         <img class="card-img-top" src="{{product.image}}" alt="Card image cap" width="100px" height="200px">
         <label class="rating">{{product.rating.rate}}</label>
+        <app-rating [rating]="product.rating.rate"></app-rating>
         <div class="card-body"> 
           <h5 class="card-title">{{product.title}}</h5>
           <!-- <a href="#" class="btn btn-primary">Add to Cart</a> -->
