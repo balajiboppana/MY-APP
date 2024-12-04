@@ -1,5 +1,11 @@
-<h1 *ngIf="rating<=5&&rating>=4">* * * * * </h1>
-<h1 *ngIf="rating<=4&&rating>=3">* * * * </h1>
+<!-- <h1  *ngIf="rating<=5&&rating>=4">* * * * * </h1> -->
+<!-- <h1 *ngIf="rating<=4&&rating>=3">* * * * </h1>
 <h1 *ngIf="rating<=3&&rating>=2">* * * </h1>
 <h1 *ngIf="rating<=2&&rating>=1">* * </h1>
-<h1 *ngIf="rating<=1&&rating>=0">* </h1>
+<h1 *ngIf="rating<=1&&rating>=0">* </h1> -->
+
+<img src="assets/FiveStarRating.jpeg" *ngIf="rating<=5&&rating>4" height="38px" width="200px" alt="">
+<img src="assets/FourStarRating.jpeg" *ngIf="rating<=4&&rating>3" height="38px" width="200px" alt="">
+<img src="assets/ThreeStarRating.jpeg" *ngIf="rating<=3&&rating>2" height="38px" width="200px" alt="">
+<img src="assets/TwoStarRating.jpeg"   *ngIf="rating<=2&&rating>1" height="38px" width="200px" alt="">
+<img src="assets/OneStarRating.jpeg"   *ngIf="rating<=1&&rating>0" height="38px" width="200px" alt="">

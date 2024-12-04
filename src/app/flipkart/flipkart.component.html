@@ -34,6 +34,7 @@
             <th>Product Name</th>
             <th>Price</th>
             <th>Rating</th>
+            <th></th>
             <th>Free Delivery</th>
             <th>Actions</th>
         </tr>
@@ -44,6 +45,7 @@
             <td [ngClass]="{'text-danger':product.package<4,'text-success':product.package>=4}">{{product.name|lowercase}}</td>
             <td>{{product.price}}</td>
             <td>{{product.rating}}</td>
+            <td><app-rating [rating]="product.rating"></app-rating></td>
             <td>{{product.Freedelivery}}</td>
             <td>
                 <button (click)="delete(i)" *ngIf="product.price>2" class="btn btn-danger">delete</button>
