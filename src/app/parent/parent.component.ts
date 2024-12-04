@@ -7,6 +7,6 @@ import { Component } from '@angular/core';
 })
 export class ParentComponent {
   store(value:number){
-    alert(value);
+    alert(value)
   }
 }
