@@ -60,6 +60,9 @@ import { EditIdcardComponent } from './edit-idcard/edit-idcard.component';
 import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './child/child.component';
 import { RatingComponent } from './rating/rating.component';
+import { SiblingsComponent } from './siblings/siblings.component';
+import { Sibling1Component } from './sibling1/sibling1.component';
+import { Sibling2Component } from './sibling2/sibling2.component';
 
 @NgModule({
   declarations: [
@@ -104,6 +107,9 @@ import { RatingComponent } from './rating/rating.component';
     ParentComponent,
     ChildComponent,
     RatingComponent,
+    SiblingsComponent,
+    Sibling1Component,
+    Sibling2Component,
   ],
   imports: [
     BrowserModule,
