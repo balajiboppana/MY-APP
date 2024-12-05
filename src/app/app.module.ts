@@ -64,6 +64,8 @@ import { SiblingsComponent } from './siblings/siblings.component';
 import { Sibling1Component } from './sibling1/sibling1.component';
 import { Sibling2Component } from './sibling2/sibling2.component';
 import { TextAreaComponent } from './text-area/text-area.component';
+import { PricePipe } from './price.pipe';
+import { CapitalDirective } from './capital.directive';
 
 @NgModule({
   declarations: [
@@ -112,6 +114,8 @@ import { TextAreaComponent } from './text-area/text-area.component';
     Sibling1Component,
     Sibling2Component,
     TextAreaComponent,
+    PricePipe,
+    CapitalDirective,
   ],
   imports: [
     BrowserModule,
