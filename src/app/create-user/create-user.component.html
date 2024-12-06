@@ -68,8 +68,9 @@
                 <h2>card {{i+1}}</h2>
                 <label for="">Number:</label>
                 <input type="number" formControlName="number">
-                <div *ngIf="cardsFormArray.controls[i]?.get('number')?.touched && cardsFormArray.controls[i]?.get('number')?.invalid"></div>
+                <div *ngIf="cardsFormArray.controls[i]?.get('number')?.touched && cardsFormArray.controls[i]?.get('number')?.invalid">
                 <p class="error" *ngIf="cardsFormArray.controls[i]?.get('number')?.errors?.['required']">Number is required</p>                
+                </div>
                 <br>
 
                 <label for="">Expiry:</label>
