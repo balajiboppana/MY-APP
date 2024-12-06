@@ -67,6 +67,7 @@ import { TextAreaComponent } from './text-area/text-area.component';
 import { PricePipe } from './price.pipe';
 import { CapitalDirective } from './capital.directive';
 import { TokenInterceptor } from './token.interceptor';
+import { AboutUsModule } from './about-us/about-us.module';
 
 @NgModule({
   declarations: [
@@ -138,7 +139,9 @@ import { TokenInterceptor } from './token.interceptor';
     MatDialogModule,
     MatDividerModule,
     MatExpansionModule,
-    MatListModule
+    MatListModule,
+    ReactiveFormsModule,
+    AboutUsModule,
   ],
   providers: [
     {
