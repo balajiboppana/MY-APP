@@ -19,7 +19,7 @@ import { RegistrationComponent } from './registration/registration.component';
 import { EmployeeComponent } from './employee/employee.component';
 import { FlipkartComponent } from './flipkart/flipkart.component';
 import { VehicleComponent } from './vehicle/vehicle.component';
-import{HttpClientModule} from '@angular/common/http';
+import{HTTP_INTERCEPTORS, HttpClientModule} from '@angular/common/http';
 import { AccountsComponent } from './accounts/accounts.component';
 import { ProductsComponent } from './products/products.component';
 import { MailsComponent } from './mails/mails.component';
@@ -66,6 +66,7 @@ import { Sibling2Component } from './sibling2/sibling2.component';
 import { TextAreaComponent } from './text-area/text-area.component';
 import { PricePipe } from './price.pipe';
 import { CapitalDirective } from './capital.directive';
+import { TokenInterceptor } from './token.interceptor';
 
 @NgModule({
   declarations: [
@@ -139,7 +140,13 @@ import { CapitalDirective } from './capital.directive';
     MatExpansionModule,
     MatListModule
   ],
-  providers: [],
+  providers: [
+    {
+      provide:HTTP_INTERCEPTORS,
+      useClass:TokenInterceptor,
+      multi:true,
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
