@@ -6,8 +6,8 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class VehicleService {
-  baseUrl:string='/assets/data.json';
-  // baseUrl:string='https://6128991386a213001729f9df.mockapi.io/test/v1/jurisdiction';
+  // baseUrl:string='/assets/data.json';
+   baseUrl:string='https://6128991386a213001729f9df.mockapi.io/test/v1/jurisdiction';
   constructor(private _httpClient:HttpClient) { }
   getVehicles():Observable<any>{
     return this._httpClient.get(this.baseUrl);
