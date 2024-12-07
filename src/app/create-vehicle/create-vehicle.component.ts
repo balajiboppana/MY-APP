@@ -15,8 +15,8 @@ export class CreateVehicleComponent {
     private _activateRoute: ActivatedRoute
   ) {
     _activateRoute.params.subscribe((data: any) => {
-      console.log(data);
-      this.id = data.id;
+      console.log(data); // is used primarily for debugging to inspect route parameters or any other data at runtime.
+      this.id = data.id;  // (it is used to assign the id parameter from the route to the class property id)
       //api call
       _vehicleService.getVehicle(data.id).subscribe((data: any) => {
         this.vehicleForm.patchValue(data);
