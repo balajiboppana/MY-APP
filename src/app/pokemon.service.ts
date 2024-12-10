@@ -6,8 +6,10 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class PokemonService {
-  constructor(private _httpClient:HttpClient) { }
-  getpokemon():Observable<any>{
-    return this._httpClient.get('https://dummyapi.online/api/pokemon');
+  constructor(private _http: HttpClient) {}
+  apiUrl:string ='https://dummyapi.online/api/pokemon';
+  // Fetching the list of Pokemons from the API
+  getPokemons(): Observable<any> {
+    return this._http.get(this.apiUrl);
   }
 }
