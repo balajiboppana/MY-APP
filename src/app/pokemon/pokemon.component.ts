@@ -7,14 +7,14 @@ import { PokemonService } from '../pokemon.service';
   styleUrls: ['./pokemon.component.css']
 })
 export class PokemonComponent {
-  pokemon:any=[];
-  constructor(private _pokemonService:PokemonService){
-    _pokemonService.getpokemon().subscribe(
+  pokemons:any=[];
+  constructor(private pokemanservice:PokemonService){
+    pokemanservice.getPokemons().subscribe(
       (data:any)=>{
-        this.pokemon=data;
+        this.pokemons=data;
       },
       (err:any)=>{
-        alert('Internal server error');
+        alert("Internal server error");
       }
     )
   }
