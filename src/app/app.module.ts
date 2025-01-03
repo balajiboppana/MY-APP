@@ -68,6 +68,14 @@ import { PricePipe } from './price.pipe';
 import { CapitalDirective } from './capital.directive';
 import { TokenInterceptor } from './token.interceptor';
 import { AboutUsModule } from './about-us/about-us.module';
+import { ShoppingComponent } from './shopping/shopping.component';
+import {MatGridListModule} from '@angular/material/grid-list';
+import { CreateProductComponent } from './create-product/create-product.component';
+import { OperationsComponent } from './operations/operations.component';
+import { AllProductsComponent } from './all-products/all-products.component';
+import { ViewProductComponent } from './view-product/view-product.component';
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field'; 
 
 @NgModule({
   declarations: [
@@ -118,6 +126,11 @@ import { AboutUsModule } from './about-us/about-us.module';
     TextAreaComponent,
     PricePipe,
     CapitalDirective,
+    ShoppingComponent,
+    CreateProductComponent,
+    OperationsComponent,
+    AllProductsComponent,
+    ViewProductComponent,
   ],
   imports: [
     BrowserModule,
@@ -142,6 +155,9 @@ import { AboutUsModule } from './about-us/about-us.module';
     MatListModule,
     ReactiveFormsModule,
     AboutUsModule,
+    MatGridListModule,
+    MatInputModule,
+    MatFormFieldModule,
   ],
   providers: [
     {

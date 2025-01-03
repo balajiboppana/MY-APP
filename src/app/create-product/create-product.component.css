@@ -1,0 +1,20 @@
+/* Make the form width responsive */
+form {
+    width: 100%;
+    max-width: 400px;  /* Set a max-width to prevent the form from stretching too much */
+    margin: 0 auto;    /* Center the form horizontally */
+  }
+  
+  /* Style mat-form-field to make it more readable and responsive */
+  mat-form-field {
+    width: 100%;
+    margin-bottom: 16px;  /* Add spacing between form fields */
+  }
+  
+  /* Make the button full width within its tile */
+  button {
+    width: 100%;
+    margin-top: 16px;
+  }
+  
+  

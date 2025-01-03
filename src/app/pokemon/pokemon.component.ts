@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { PokemonService } from '../pokemon.service';
 
 @Component({
@@ -6,7 +6,7 @@ import { PokemonService } from '../pokemon.service';
   templateUrl: './pokemon.component.html',
   styleUrls: ['./pokemon.component.css']
 })
-export class PokemonComponent {
+export class PokemonComponent implements OnInit, OnDestroy {
   pokemons:any=[];
   constructor(private pokemanservice:PokemonService){
     pokemanservice.getPokemons().subscribe(
@@ -17,5 +17,11 @@ export class PokemonComponent {
         alert("Internal server error");
       }
     )
+  }
+  ngOnDestroy(): void {
+    console.log("destroy");
+  }
+  ngOnInit(): void {
+    console.log("asdf");
   }
 }

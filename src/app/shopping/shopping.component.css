@@ -1,0 +1,16 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  /* Create 3 equal-width columns */
+    grid-gap: 16px;
+    margin: 20px;
+  }
+  
+  .grid-item {
+    padding: 16px;
+    min-height: 200px;  /* Set a min height to ensure consistent tile height */
+    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  

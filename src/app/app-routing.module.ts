@@ -38,6 +38,7 @@ import { IdcardDetailsComponent } from './idcard-details/idcard-details.componen
 import { ParentComponent } from './parent/parent.component';
 import { SiblingsComponent } from './siblings/siblings.component';
 import { AboutCompanyComponent } from './about-us/about-company/about-company.component';
+import { ShoppingComponent } from './shopping/shopping.component';
 
 const routes: Routes = [
   {path:'login', component:LoginComponent},
@@ -82,10 +83,11 @@ const routes: Routes = [
     {
       path: 'payment',
       loadChildren: () => import('./payment/payment.module').then(m => m.PaymentModule)
-    }
+    },
+    {path:'shopping',component:ShoppingComponent},
   ]},
-  {path:'',component:LoginComponent},
-  {path:'**',component:PageNotFoundComponent},
+  {path:'',component:LoginComponent},// ( the path: '' (an empty string) is used to define the default or root route of your application.)
+  {path:'**',component:PageNotFoundComponent},// (** The ** is a wildcard that captures any unmatched route.)
 ];
 
 @NgModule({

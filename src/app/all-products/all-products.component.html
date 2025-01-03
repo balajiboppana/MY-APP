@@ -1,0 +1,9 @@
+<!-- all-products.component.html -->
+<div class="all-products">
+    <h2>All Products</h2>
+    <div *ngFor="let product of products">
+      <p>{{ product.name }}</p>
+      <button mat-raised-button color="accent" (click)="viewProduct(product)">View</button>
+    </div>
+  </div>
+  

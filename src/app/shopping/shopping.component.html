@@ -1,0 +1,15 @@
+<div class="grid-container">
+    <div class="grid-item" [style.background]="tiles[0].color" [ngStyle]="{ 'grid-row-end': 'span ' + tiles[0].rows }">
+      <app-create-product *ngIf="tiles[0].text === 'One'"></app-create-product>
+    </div>
+    <div class="grid-item" [style.background]="tiles[1].color" [ngStyle]="{ 'grid-row-end': 'span ' + tiles[1].rows }">
+      <app-all-products *ngIf="tiles[1].text === 'Two'"></app-all-products>
+    </div>
+    <div class="grid-item" [style.background]="tiles[2].color" [ngStyle]="{ 'grid-row-end': 'span ' + tiles[2].rows }">
+      <app-view-product *ngIf="tiles[2].text === 'Three'"></app-view-product>
+    </div>
+    <div class="grid-item" [style.background]="tiles[3].color" [ngStyle]="{ 'grid-row-end': 'span ' + tiles[3].rows }">
+      <app-operations *ngIf="tiles[3].text === 'Four'"></app-operations>
+    </div>
+  </div>
+  
