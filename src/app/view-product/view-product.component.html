@@ -1,1 +1,9 @@
-<p>view-product works!</p>
+<div class="view-product" *ngIf="product">
+    <h2>{{ product.name }}</h2>
+    <p>Price: {{ product.price }}</p>
+    <p>Rating: <span [innerHTML]="generateStars(product.rating)"></span></p>
+    <img [src]="product.image" alt="{{ product.name }}" />
+</div>
+<div *ngIf="!product">
+    <p>Select a product to view its details.</p>
+</div>

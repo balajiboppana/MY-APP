@@ -1,12 +1,10 @@
 <div class="operations-form">
-    <h2>Operations</h2>
-  
-    <div *ngIf="showConfirmation">
+  <h2>Operations</h2>
+  <div *ngIf="showConfirmation">
       <p>Do you want to create this product: <strong>{{ productName }}</strong>?</p>
       <button mat-raised-button color="primary" (click)="confirmCreate()">Confirm Create</button>
-    </div>
-  
-    <div *ngIf="!showConfirmation">
+  </div>
+  <div *ngIf="!showConfirmation">
       <p>No product selected yet. Please create a product first.</p>
-    </div>
+  </div>
 </div>

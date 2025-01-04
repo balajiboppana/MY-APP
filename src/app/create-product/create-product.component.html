@@ -1,32 +1,22 @@
 <div class="create-product-form">
-    <h2>Create Product</h2>
-  
-    <form (ngSubmit)="onSubmit()" #createProductForm="ngForm">
-      <!-- Name Field -->
+  <h2>Create Product</h2>
+  <form (ngSubmit)="onSubmit()" #createProductForm="ngForm">
       <mat-form-field appearance="fill">
-        <mat-label>Product Name</mat-label>
-        <input matInput type="text" name="name" [(ngModel)]="product.name" required>
+          <mat-label>Product Name</mat-label>
+          <input matInput type="text" name="name" [(ngModel)]="product.name" required>
       </mat-form-field>
-  
-      <!-- Price Field -->
       <mat-form-field appearance="fill">
-        <mat-label>Product Price</mat-label>
-        <input matInput type="number" name="price" [(ngModel)]="product.price" required>
+          <mat-label>Product Price</mat-label>
+          <input matInput type="number" name="price" [(ngModel)]="product.price" required>
       </mat-form-field>
-  
-      <!-- Rating Field -->
       <mat-form-field appearance="fill">
-        <mat-label>Product Rating</mat-label>
-        <input matInput type="number" name="rating" [(ngModel)]="product.rating" min="1" max="5" required>
+          <mat-label>Product Rating</mat-label>
+          <input matInput type="number" name="rating" [(ngModel)]="product.rating" min="1" max="5" required>
       </mat-form-field>
-  
-      <!-- Image URL Field -->
       <mat-form-field appearance="fill">
-        <mat-label>Product Image URL</mat-label>
-        <input matInput type="text" name="image" [(ngModel)]="product.image" required>
+          <mat-label>Product Image URL</mat-label>
+          <input matInput type="text" name="image" [(ngModel)]="product.image" required>
       </mat-form-field>
-  
       <button mat-raised-button color="primary" type="submit" [disabled]="!createProductForm.form.valid">Create Product</button>
-    </form>
-  </div>
-  
+  </form>
+</div>
