@@ -1,0 +1,24 @@
+.all-products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.product-card {
+    background-color: #f8f9fa;  /* Light gray background */
+    border: 1px solid #ddd;  /* Border */
+    border-radius: 8px;  /* Rounded corners */
+    padding: 16px;
+    width: 250px;  /* Fixed width for consistency */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Subtle shadow */
+}
+
+.product-card h3 {
+    margin-top: 0;
+    color: #333;  /* Darker text color */
+}
+
+.product-card p {
+    margin: 8px 0;
+    color: #555;  /* Medium text color */
+}
